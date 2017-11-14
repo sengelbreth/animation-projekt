@@ -80,19 +80,21 @@
 
 
 #sprite {
-    background-image: url(img/spritesexogsamfund.svg);
-    background-size: 800% 600%;
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
     z-index: 2;
-    width: vw;
-    height: 10vw;
+    width: 15vw;
+    height: 30vw;
 }
 
 .offer_walkcycle_right {
     animation-name: offer_walkcycle_right_kf;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-iteration-count: forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
     animation-timing-function: steps(5);
+
 }
 
 @keyframes offer_walkcycle_right_kf {
@@ -100,7 +102,7 @@
         background-position: 0 0;
     }
     100% {
-        background-position: -400% 0;
+        background-position: -500% 0;
     }
 }
 
