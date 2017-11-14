@@ -84,12 +84,12 @@
 
 #offer_container {
     position: absolute;
-    top: 10%;
+    top: 5%;
 }
 
 .offer_start_pos {
     left: -10%;
-    top: 10%;
+    top: 8%;
 
 }
 
@@ -107,19 +107,19 @@
 
     }
     100% {
-        left: 50%;
+        left: 35%;
     }
 }
 
 .offer_graeder_pos {
-    left: 50%;
-    top: 10%;
+    left: 35%;
+    top: 12%;
 
 }
 
 .offer_glad_pos {
     left: 50%;
-    top: 10%;
+    top: 12%;
 
 }
 
@@ -194,13 +194,13 @@
 
 #sender_container {
     position: absolute;
-    top: 50%;
+    top: 40%;
 }
 
 
 .sender_start_pos {
     left: -10%;
-    top: 50%;
+    top: 40%;
 }
 
 .sender_move_right {
@@ -223,7 +223,7 @@
 
 .sender_kigger_pos {
     left: 30%;
-    top: 50%;
+    top: 40%;
 }
 
 /******* sender sprite********/
@@ -277,12 +277,12 @@
 
 #modtager_container {
     position: absolute;
-    top: 50%;
+    top: 40%;
 }
 
 .modtager_start_pos {
     left: 110%;
-    top: 50%;
+    top: 40%;
 }
 
 
@@ -307,7 +307,7 @@
 
 .modtager_telefon_pos {
     left: 70%;
-    top: 50%;
+    top: 40%;
 }
 
 
