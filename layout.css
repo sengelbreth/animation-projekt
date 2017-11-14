@@ -85,6 +85,16 @@
     position: absolute;
 }
 
+
+.link {
+    position: absolute;
+    width: 10vw;
+    height: 20vw;
+    top: 2%;
+    left: 2%;
+}
+
+
 /******* offer container ting********/
 
 #offer_container {
