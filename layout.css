@@ -75,7 +75,7 @@
 
     }
     100% {
-        left: 60%;
+        left: 50%;
     }
 }
 
@@ -135,7 +135,7 @@
 
     }
     100% {
-        left: 60%;
+        left: 30%;
     }
 }
 
@@ -166,6 +166,24 @@
     }
     100% {
         background-position: -600% -100%;
+    }
+}
+
+.kiggerPaaTelefon {
+    animation-name: kiggerPaaTelefon_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4);
+}
+
+@keyframes kiggerPaaTelefon_kf {
+    0% {
+        background-position: 0 -200%;
+    }
+    100% {
+        background-position: -400% -200%;
     }
 }
 
