@@ -59,23 +59,22 @@
 }
 
 .dilemma_info {
-
     width: 32vw;
 }
 
 .dilemma_svar1 {
-    left: 10vw;
-    bottom: 4vw;
-    width: 19vw;
+    left: 16vw;
+    bottom: 3vw;
+    width: 18vw;
     cursor: pointer;
     /* z-index: 4;*/
     position: absolute;
 }
 
 .dilemma_svar2 {
-    left: -10vw;
-    bottom: 8vw;
-    width: 19vw;
+    left: -2vw;
+    bottom: 3vw;
+    width: 18vw;
     cursor: pointer;
     /*z-index: 4;*/
     position: absolute;
