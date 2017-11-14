@@ -191,6 +191,58 @@
 
 #modtager_container {
     position: absolute;
+    top: 50%;
 }
 
-.modtager_start_pos {}
+.modtager_start_pos {
+    left: 110%;
+    top: 50%;
+}
+
+
+.modtager_move_left {
+    animation-name: modtager_move_left_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes modtager_move_left_kf {
+    0% {
+        left: 110%;
+    }
+    100% {
+        left: 70%;
+    }
+}
+
+
+/******* modtager sprite ting********/
+
+#modtager_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    z-index: 2;
+    width: 15vw;
+    height: 30vw;
+}
+
+.modtager_walkcycle_left {
+    animation-name: modtager_walkcycle_left_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(6);
+}
+
+@keyframes modtager_walkcycle_left_kf {
+    0% {
+        background-position: 0 -400%;
+    }
+    100% {
+        background-position: -500% -400%;
+    }
+}
