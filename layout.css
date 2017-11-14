@@ -52,6 +52,7 @@
 
 #offer_container {
     position: absolute;
+    top: 10%;
 }
 
 .offer_start_pos {
@@ -78,8 +79,9 @@
     }
 }
 
+/******* offer sprite********/
 
-#sprite {
+#offer_sprite {
     background-image: url(img/spritesexogsamfund2-02.svg);
     background-size: 600% 800%;
     z-index: 2;
@@ -93,7 +95,7 @@
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: both;
-    animation-timing-function: steps(5);
+    animation-timing-function: steps(6);
 
 }
 
@@ -102,22 +104,70 @@
         background-position: 0 0;
     }
     100% {
-        background-position: -500% 0;
+        background-position: -600% 0;
     }
 }
-
 
 /******* sender container ting********/
 
 #sender_container {
     position: absolute;
+    top: 50%;
 }
 
-.sender_start_pos {}
+
+.sender_start_pos {
+    left: -10%;
+    top: 50%;
+}
+
+.sender_move_right {
+    animation-name: sender_move_right_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sender_move_right_kf {
+    0% {
+        left: -10%;
+
+    }
+    100% {
+        left: 60%;
+    }
+}
 
 
+/******* sender sprite********/
 
+#sender_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    z-index: 2;
+    width: 15vw;
+    height: 30vw;
+}
 
+.sender_walkcycle_right {
+    animation-name: sender_walkcycle_right_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(6);
+
+}
+
+@keyframes sender_walkcycle_right_kf {
+    0% {
+        background-position: 0 -100%;
+    }
+    100% {
+        background-position: -600% -100%;
+    }
+}
 
 /******* modtager container ting********/
 
