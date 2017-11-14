@@ -10,7 +10,7 @@
 
 }
 
-/*  kanpper bokse */
+/*  kanpper og bokse */
 
 .start {
     position: absolute;
@@ -78,6 +78,22 @@
     cursor: pointer;
     /*z-index: 4;*/
     position: absolute;
+}
+
+.afslut_img {
+    position: absolute;
+    width: 30vw;
+    top: 1vw;
+    left: 1vw;
+}
+
+.replay {
+    position: absolute;
+    top: 35vw;
+    left: 5vw;
+    height: 20vw;
+    width: 20vw;
+    cursor: pointer;
 }
 
 /******* offer container ting********/
