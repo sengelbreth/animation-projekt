@@ -10,6 +10,7 @@
 
 }
 
+/*  kanpper bokse */
 
 .start {
     position: absolute;
@@ -48,6 +49,38 @@
 
 }
 
+#dilemma_container {
+    position: absolute;
+    height: 25vw;
+    width: 40vw;
+    left: 65vw;
+    top: 1vw;
+    z-index: 3;
+}
+
+.dilemma_info {
+
+    width: 32vw;
+}
+
+.dilemma_svar1 {
+    left: 10vw;
+    bottom: 4vw;
+    width: 19vw;
+    cursor: pointer;
+    /* z-index: 4;*/
+    position: absolute;
+}
+
+.dilemma_svar2 {
+    left: -10vw;
+    bottom: 8vw;
+    width: 19vw;
+    cursor: pointer;
+    /*z-index: 4;*/
+    position: absolute;
+}
+
 /******* offer container ting********/
 
 #offer_container {
@@ -79,6 +112,18 @@
     }
 }
 
+.offer_graeder_pos {
+    left: 50%;
+    top: 10%;
+
+}
+
+.offer_glad_pos {
+    left: 50%;
+    top: 10%;
+
+}
+
 /******* offer sprite********/
 
 #offer_sprite {
@@ -105,6 +150,44 @@
     }
     100% {
         background-position: -600% 0;
+    }
+}
+
+.offer_graeder {
+    animation-name: offer_graeder_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+
+}
+
+@keyframes offer_graeder_kf {
+    0% {
+        background-position: 0 -600%;
+    }
+    100% {
+        background-position: -300% -600%;
+    }
+}
+
+.offer_glad {
+    animation-name: offer_glad_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+
+}
+
+@keyframes offer_glad_kf {
+    0% {
+        background-position: 0 -700%;
+    }
+    100% {
+        background-position: -300% -700%;
     }
 }
 
@@ -139,6 +222,10 @@
     }
 }
 
+.sender_kigger_pos {
+    left: 30%;
+    top: 50%;
+}
 
 /******* sender sprite********/
 
