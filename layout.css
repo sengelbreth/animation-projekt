@@ -421,15 +421,15 @@
 }
 
 .afslutnende_glad_pos {
-    top: 10%;
+    top: 5%;
     left: 60%;
 }
 
 #afslutning_glad_sprite {
     background-image: url(img/spritesexogsamfund2-02.svg);
     background-size: 600% 800%;
-    width: 40vw;
-    height: 80vw;
+    width: 35vw;
+    height: 70vw;
 }
 
 
@@ -456,15 +456,15 @@
 }
 
 .afslutnende_graeder_pos {
-    top: 10%;
+    top: 5%;
     left: 60%;
 }
 
 #afslutning_graeder_sprite {
     background-image: url(img/spritesexogsamfund2-02.svg);
     background-size: 600% 800%;
-    width: 40vw;
-    height: 80vw;
+    width: 35vw;
+    height: 70vw;
 }
 
 
