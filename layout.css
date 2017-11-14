@@ -393,3 +393,75 @@
         background-position: -200% -300%;
     }
 }
+
+/*** afslutning ***/
+
+#afslutning_glad_container {
+    position: absolute;
+}
+
+.afslutnende_glad_pos {
+    top: 10%;
+    left: 60%;
+}
+
+#afslutning_glad_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    width: 40vw;
+    height: 80vw;
+}
+
+
+
+
+.afslutning_glad {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(3);
+    animation-name: afslutning_glad_sprite_kf;
+}
+
+@keyframes afslutning_glad_sprite_kf {
+    0% {
+        background-position: 0 -700%;
+    }
+    100% {
+        background-position: -300% -700%;
+    }
+}
+
+#afslutning_graeder_container {
+    position: absolute;
+}
+
+.afslutnende_graeder_pos {
+    top: 10%;
+    left: 60%;
+}
+
+#afslutning_graeder_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    width: 40vw;
+    height: 80vw;
+}
+
+
+
+
+.afslutning_graeder {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(3);
+    animation-name: afslutning_graeder_sprite_kf;
+}
+
+@keyframes afslutning_graeder_sprite_kf {
+    0% {
+        background-position: 0 -600%;
+    }
+    100% {
+        background-position: -300% -600%;
+    }
+}
