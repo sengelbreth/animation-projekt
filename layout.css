@@ -219,6 +219,12 @@
 }
 
 
+.modtager_telefon_pos {
+    left: 70%;
+    top: 50%;
+}
+
+
 /******* modtager sprite ting********/
 
 #modtager_sprite {
@@ -244,5 +250,44 @@
     }
     100% {
         background-position: -500% -400%;
+    }
+}
+
+.KiggerPaaTelefon_modtager {
+    animation-name: KiggerPaaTelefon_modtager_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+}
+
+@keyframes KiggerPaaTelefon_modtager_kf {
+    0% {
+        background-position: 0 -500%;
+    }
+
+    100% {
+        background-position: 500% -500%;
+    }
+}
+
+
+.modtager_reaktion {
+    animation-name: modtager_reaktion_kf;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(2);
+}
+
+@keyframes modtager_reaktion_kf {
+    0% {
+        background-position: 0 -300%;
+    }
+
+    100% {
+        background-position: -200% -300%;
     }
 }
