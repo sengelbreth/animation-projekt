@@ -124,14 +124,16 @@ function videresender() {
 }
 
 function afslutning1() {
+
     $("#cry").off("ended", afslutning1);
+    $("#afslutning").removeClass("hide");
     $("#sender_container").addClass("hide");
     $("#afslutning_glad_sprite").addClass("hide");
-    $("#afslutning").removeClass("hide");
+    $("#afslutning_graeder_sprite").removeClass("hide");
     $(".godt").addClass("hide");
     $("#modtager_container").addClass("hide");
     $("#offer_container").addClass("hide");
-
+    $(".forkert").removeClass("hide");
 }
 
 function sletter() {
@@ -146,9 +148,11 @@ function sletter() {
 
 function afslutning2() {
     $("#glad").off("ended", afslutning2);
+    $("#afslutning").removeClass("hide");
     $("#sender_container").addClass("hide");
     $("#afslutning_graeder_sprite").addClass("hide");
-    $("#afslutning").removeClass("hide");
+    $(".godt").removeClass("hide");
+    $("#afslutning_glad_sprite").removeClass("hide");
     $(".forkert").addClass("hide");
     $("#modtager_container").addClass("hide");
     $("#offer_container").addClass("hide");
