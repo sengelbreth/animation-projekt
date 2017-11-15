@@ -56,7 +56,7 @@ function modtagerBesked() {
     $("#sender_sprite").addClass("kiggerPaaTelefon");
 
     $("#sender_sprite").on("animationend", beskedSendt);
-    //setTimeout(beskedSendt, 10000)
+    //setTimeout(beskedSendt, 35000)
 }
 
 function beskedSendt() {
