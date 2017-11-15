@@ -4,7 +4,7 @@ function startHistorie() {
     console.log("start historie");
     $("#startknap").show();
     $("#title")[0].play();
-    $("#title")[0].volume = 0.4;
+    $("#title")[0].volume = 0.1;
     $("#offer_container").addClass("hide");
     $("#sender_container").addClass("hide");
     $("#dilemma_container").addClass("hide");
@@ -22,7 +22,7 @@ function offerKommerInd() {
     $("#fodtrin")[0].play();
     $("#bagrund_musik")[0].currentTime = 10;
     $("#bagrund_musik")[0].play();
-    $("#bagrund_musik")[0].volume = 0.2;
+    $("#bagrund_musik")[0].volume = 0.1;
     $("#offer_sprite").removeClass("offer_glad");
     $("#offer_sprite").removeClass("offer_graeder");
     $("#modtager_sprite").removeClass("KiggerPaaTelefon_modtager");
@@ -44,34 +44,41 @@ function senderKommerInd() {
 }
 
 function modtagerBesked() {
-    console.log("medtager besked")
+    console.log("modtager besked")
     $("#sender_container").off("animationend", modtagerBesked);
     $("#sender_container").removeClass("sender_start_pos");
 
     $("#sender_sprite").removeClass("sender_walkcycle_right");
     $("#sms_modtag")[0].play();
+    $("#sms_modtag")[0].volume = 0.2;
     $("#sender_container").addClass("sender_kigger_pos");
     $("#griner")[0].play();
-    $("#griner")[0].currentTime = 5;
+    $("#griner")[0].currentTime = 7;
+    $("#griner")[0].volume = 0.2;
     $("#sender_sprite").addClass("kiggerPaaTelefon");
 
-    $("#sender_sprite").on("animationend", beskedSendt);
-    //setTimeout(beskedSendt, 35000)
+    $("#sender_container").on("animationend", beskedSendt);
+
 }
 
+
+
+
 function beskedSendt() {
-    console.log("besked sendt")
-    $("#sender_sprite").off("animationend", beskedSendt);
+    setTimeout(function () {
+        console.log("besked sendt")
 
-    $("#sms_sendt")[0].play();
+        $("#sms_sendt")[0].play();
 
-    $("#sms_sendt").on("ended", modtagerKommerInd);
 
+        $("#sms_sendt").on("ended", modtagerKommerInd);
+    }, 4000);
+    $("#sender_container").off("animationend", beskedSendt);
 }
 
 
 function modtagerKommerInd() {
-    console.log("medtager kommer ind")
+    console.log("modtager kommer ind")
     $("#sms_sendt").off("ended", modtagerKommerInd);
     $("#modtager_container").removeClass("hide")
     $("#fodtrin")[0].play();
