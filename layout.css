@@ -93,17 +93,17 @@
 
 .afslut_img {
     position: absolute;
-    width: 30vw;
-    top: 1vw;
-    left: 1vw;
+    width: 40vw;
+    top: 3vw;
+    left: 16vw;
 }
 
 .replay {
     position: absolute;
-    top: 35vw;
-    left: 5vw;
-    height: 20vw;
-    width: 20vw;
+    top: 10vw;
+    left: 2.1vw;
+    height: 10vw;
+    width: 10vw;
     cursor: pointer;
 }
 
@@ -113,7 +113,7 @@
     position: absolute;
     width: 10vw;
     height: 20vw;
-    top: 2%;
+    top: -9%;
     left: 2%;
 }
 
@@ -426,7 +426,7 @@
 }
 
 .afslutnende_glad_pos {
-    top: 5%;
+    top: -10%;
     left: 60%;
 }
 
@@ -436,8 +436,6 @@
     width: 35vw;
     height: 70vw;
 }
-
-
 
 
 .afslutning_glad {
@@ -461,7 +459,7 @@
 }
 
 .afslutnende_graeder_pos {
-    top: 5%;
+    top: -6%;
     left: 60%;
 }
 
