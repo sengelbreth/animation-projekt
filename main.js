@@ -23,6 +23,10 @@ function offerKommerInd() {
     $("#bagrund_musik")[0].currentTime = 10;
     $("#bagrund_musik")[0].play();
     $("#bagrund_musik")[0].volume = 0.2;
+    $("#offer_sprite").removeClass("offer_glad");
+    $("#offer_sprite").removeClass("offer_graeder");
+    $("#modtager_sprite").removeClass("KiggerPaaTelefon_modtager");
+    $("#modtager_sprite").removeClass("modtager_reaktion");
     $("#offer_sprite").addClass("offer_walkcycle_right");
     $("#offer_container").removeClass("hide");
     $("#offer_container").on("animationend", senderKommerInd);
@@ -47,7 +51,8 @@ function modtagerBesked() {
     $("#sender_sprite").removeClass("sender_walkcycle_right");
     $("#sms_modtag")[0].play();
     $("#sender_container").addClass("sender_kigger_pos");
-
+    $("#griner")[0].play();
+    $("#griner")[0].currentTime = 5;
     $("#sender_sprite").addClass("kiggerPaaTelefon");
 
     $("#sender_sprite").on("animationend", beskedSendt);
@@ -91,7 +96,7 @@ function modtagerBesked2() {
 function reaktion() {
     console.log("reaktion")
     $("#modtager_sprite").off("animationend", reaktion);
-    //$("#modtager_container").removeClass("modtager_telefon_pos");
+
     $("#modtager_sprite").removeClass("KiggerPaaTelefon_modtager");
 
     $("#modtager_sprite").addClass("modtager_reaktion");
@@ -135,12 +140,12 @@ function sletter() {
     $("#offer_sprite").removeClass("offer_walkcycle_right");
     $("#offer_sprite").addClass("offer_glad");
     $("#offer_container").addClass("offer_glad_pos");
-    $("#griner")[0].play();
-    $("#griner").on("ended", afslutning2);
+    $("#glad")[0].play();
+    $("#glad").on("ended", afslutning2);
 }
 
 function afslutning2() {
-    $("#griner").off("ended", afslutning2);
+    $("#glad").off("ended", afslutning2);
     $("#sender_container").addClass("hide");
     $("#afslutning_graeder_sprite").addClass("hide");
     $("#afslutning").removeClass("hide");
