@@ -126,7 +126,7 @@ function videresender() {
     $("#offer_sprite").addClass("offer_graeder");
     $("#offer_container").addClass("offer_graeder_pos");
     $("#cry")[0].play();
-    $("#cry")[0].currentTime = 20;
+    $("#cry")[0].currentTime = 25;
     $("#cry").on("ended", afslutning1);
 }
 
