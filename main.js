@@ -5,6 +5,7 @@ function startHistorie() {
     $("#startknap").show();
     $("#title")[0].play();
     $("#title")[0].volume = 0.1;
+    $("#bagrund_musik")[0].pause();
     $("#offer_container").addClass("hide");
     $("#sender_container").addClass("hide");
     $("#dilemma_container").addClass("hide");
